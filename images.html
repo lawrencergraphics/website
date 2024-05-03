@@ -3,8 +3,10 @@
 <html lang="en">
               
 <head>
+    <link rel="shortcut icon" href="favicon.ico" />
+
 <meta charset="utf-8">
-<title>my index page</title>
+<title>my images page</title>
 <style>
 a {
     font-family: "Caveat", cursive;
@@ -17,29 +19,28 @@ a {
     transition: 1s font-size, 1s color;
 }
 
-a:hover {
-    color: plum;
-    text-decoration: underline;
-    font-size: 25px;
-    transition: .4s font-size, .4s color;
+body { 
+    background-image: url("images/denim.png");
+    background-repeat: repeat;
+    color: wheat; 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  } 
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid black;
+
+}
 </style>
 </head>
             
 <body>
-<img src="images/john.png" alt="a man with thumbs up" />
+<img src="images/denim.png" alt="background" />
 <p>hello world.</p>
 <ul>
 <li><a href="text.html">text page</a></li>
 <li><a href="boxes.html">boxes page</a></li>
-<li><a href="images.html">images page</a></li>
-<li><a href="position.html">position page</a></li>
 </ul>
 </body>
 </html>

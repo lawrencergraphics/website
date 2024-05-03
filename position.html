@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>position</title>
+    <style>
+        div {
+            background: lightpink;
+            width: 400px;
+            height: 200px;
+            border: 10px solid #FED;
+            padding: 20px;
+        }
+
+        .sticky {
+            position: static;
+            background: #D1E7ED; 
+        }
+
+        .static {
+            position: static;
+            background: #ACE; 
+        }
+
+        .relative {
+            position: relative;
+            left: 200px;
+            background: #7EA7ED;
+            z-index: -100; 
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background: #5E77EE; 
+        }
+
+        .absolute {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            background: #5E57E7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sticky">
+        <p>sticky box</p>
+    </div>
+
+</body>
+
+<body>
+
+    <div class="static">
+        <p>static box</p>
+    </div>
+
+</body>
+
+<body>
+
+    <div class="relative">
+        <p>relative box</p>
+    </div>
+
+</body>
+
+<body>
+
+    <div class="fixed">
+        <p>fixed box</p>
+    </div>
+
+</body>
+
+<body>
+
+    <div class="absolute">
+        <p>absolute box</p>
+    </div>
+
+</body>
+
+</html>
