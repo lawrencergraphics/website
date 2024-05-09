@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<!--a comment.-->
+
+<head>
+    <meta charset="utf-8">
+    <title>grid page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        a {
+
+            color: purple;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 1s font-size, 1s color;
+        }
+
+        body {
+            background: white;
+            color: black;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: #1C1E57;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 2fr 1fr;
+            grid-template-rows: 300px 1fr 300px;
+            gap: 20px 20px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            background: #5A55ED;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            border: 5px solid #5A55ED;
+            text-align: center;
+        }
+
+        .main {
+            grid-area: main;
+            background: #7EA5ED;
+        }
+
+        .left {
+            grid-area: left;
+            background: #C0DDED;
+        }
+
+        .right {
+            grid-area: right;
+            background: #C0DDED;
+        }
+
+        header {
+            grid-area: header;
+            background: #7EA5ED;
+            font-size: 30px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #C0DDED;
+            overflow-y: scroll;
+        }
+
+        footer img {
+            width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>how did he get so UGLY?</h1>
+            <img src="images/ty3.png" alt="background" />
+        </div>
+        <div class="left">
+            <h1>so ugly</h1>
+            <img src="images/ty1.png" alt="background" />
+        </div>
+        <div class="right">
+            <h1>oh my god so ugly</h1>
+            <img src="images/ty2.png" alt="background" />
+        </div>
+        <header class="header">
+            <h1>TYSON IS SOOOOOOOO UGLY!!111111!</h1>
+        </header>
+        <footer>
+            <h1>i hate that Tyson is so ugly</h1>
+            <img src="images/ty4.png" alt="background" />
+        </footer>
+    </div>
+</body>
+
+
+</html>
