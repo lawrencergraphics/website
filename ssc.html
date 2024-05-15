@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>seahorse serenity</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            font-family: "Crimson Text";
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: #1D1075;
+            text-decoration: underline;
+            font-size: 18px;
+            transition: 1s font-size, 1s color;
+        }
+
+        a:hover {
+            color: #FED;
+            font-size: 20px;
+            transition: .4s font-size, .6s color;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 227px 2.5fr;
+            grid-template-rows: 300px 1fr 300px;
+            gap: 20px 40px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header"
+                "left main"
+                "footer footer";
+            background-image: linear-gradient(180deg, #B0D1ED 0%, #7EA5ED 100%);
+            color: black;
+            font-family: "Crimson Text";
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: #1D1075;
+            text-align: center;
+            margin: 0;
+        }
+
+        article {
+            grid-area: main;
+            background: #FED;
+            background-image: linear-gradient(180deg, #FED 35%, #FA7 100%);
+            border-radius: 70px;
+            border-bottom: 0px;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        nav {
+            grid-area: left;
+            position: fixed;
+            top: 360px;
+            background: #B0D1ED;
+            height: 400px;
+            width: 220px;
+            border-radius: 70px;
+            border-bottom: 0px;
+            padding: 20px;
+            padding-top: 70px;
+            margin-left: 20px;
+        }
+
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        li {
+            padding: 10px;
+        }
+
+        footer li {
+            display: inline;
+        }
+
+        header {
+            grid-area: header;
+            background: #B0D1ED;
+            text-align: left;
+            text-align: center;
+            font-size: 40px;
+            color: #FED;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 0px;
+            width: 100vw;
+            position: relative;
+            margin-left: calc(-50vw+50%);
+        }
+
+        footer {
+            grid-area: footer;
+            background: #7EA5ED;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        /*img {
+            width: 400px;
+            height: auto;
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SEAHORSE <br>SERENITY CHURCH</h1>
+        <img src="images/seahorseim.png" alt="seahorse with a baby seahorse" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Seahorse Home</a></li>
+            <li><a href="#">Seahorse News</a></li>
+            <li><a href="#">Seahorse Science</a></li>
+            <li><a href="#">Seahorse Fiction</a></li>
+            <li><a href="#">Seahorse Fables</a></li>
+            <li><a href="#">Seahorse Songs</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>SEAHORSE SERENITY FACTS</h1>
+        <h2>Name</h2>
+        <p>The name “Seahorse Serenity” simply comes from the peacefulness we’ve
+            found from the worship of these wonderful beings.</p>
+        <h2>What is the Seahorse Serenity Church?</h2>
+        <p>The SSC is a group of devout believers of the seahorse faith.
+            Not just a building, but a mindset and a lifestyle.
+            Here, we provide resources to worship and a community of loving seahorse believers.</p>
+        <h2>Vision</h2>
+        <p>Our mission is to teach the public of our faith,
+            and to spread awareness of the importance of seahorses.
+            We strive to grow our community and funds for our teachings.</p>
+        <h2>History</h2>
+        <p>Our founder, Sheldon H. Olson, was a man fascinated with seahorsekind.
+            Their culture, personality, and caring society.
+            Since he was a child, he was captivated. He devoted his life to researching and getting to know seahorses.
+            The beauty truly touched his soul. Wanting to share this with others, he began a club of other seahorse
+            connoisseurs.
+            From there, the word only spread further. With a small GoFundMe donation of 100,000,000 million dollars,
+            Olson set off to spread his word even further.
+            Now, the Seahorse Serenity Church has over 50 locations in every major ocean.</p>
+        <h2>Services</h2>
+        <p>We provide a multitude of services. Prayers, funerals, baptisms, exorcisms, and children’s activities to name
+            a few.
+            We are currently in the process of creating a children’s educational show, which will be available on DVD.
+        </p>
+        <h2>Location</h2>
+        <p>There are over 50 locations in every major ocean, and we encourage you to research if there are any near you.
+            We plan to attempt to build in lakes, too. This may not happen until 2050 or later.</p>
+        <h2>People (and Horses)</h2>
+        <p>Our preachers work their hardest to pass on the word of Sheldon Olson.
+            If you wish to talk to one, please head over to your local church and visit in person.</p>
+        <p>Both males and females also change colour during their courtship
+            display.</p>
+        <h2>Other</h2>
+        <p>Please consider our faith. We have never received a complaint from any of our members.
+            We are a caring, accepting family who would love to have you.</p>
+    </article>
+
+    <footer>
+        <h3>Seahorse Friends:</h3>
+        <ul>
+            <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |
+            </li>
+            <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National
+                    Geographic</a> |</li>
+            <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
+            <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All
+                    The Sea</a></li>
+        </ul>
+        <p>&copy; Seahorse Serenity 2024</p>
+    </footer>
+</body>
+
+</html>
